@@ -16,7 +16,6 @@ int main(){
             char txt[10000];
             fscanf(fp, "%s", txt);
             cout << "Your message is: " << txt << endl;
-            cout << '\n' << '\n' << endl;
             fclose(fp);
         }
         else if(res==2){
