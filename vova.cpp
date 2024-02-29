@@ -13,7 +13,8 @@ int main(){
         if(res == 1){
             FILE *fp;
             fp = fopen("message.txt", "r");
-            string txt;
+            char txt[10000];
+            fscanf(fp, "%s", name)
             cout << txt << endl;
         }
         else if(res==2){
