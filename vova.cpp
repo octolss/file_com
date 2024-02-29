@@ -7,6 +7,7 @@ using namespace std;
 
 int main(){
     while(true){
+        char name[1000] = "Vova";
         int res;
         cout << "Press 1 if you want to check ur inbox ..." << '\n' << "Press 2 if you want to to send email in global chat ..." << endl;
         cin >> res;
@@ -19,12 +20,11 @@ int main(){
             fclose(fp);
         }
         else if(res==2){
-            int AIJAIJIJAIJ;
             FILE *fp;
             char buffer[10000];
             cin >> buffer;
             fp = fopen("message.txt","w");
-            AIJAIJIJAIJ = fwrite(buffer,sizeof(buffer),1,fp);
+            fprintf(fp, "%s %s", name, buffer);
             fclose(fp);
         }
         else{
