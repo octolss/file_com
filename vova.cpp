@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <fstream>
+#include <string>
 
 using namespace std;
 
@@ -13,10 +14,9 @@ int main(){
             FILE *fp;
             fp = fopen("message.txt", "r");
             string txt;
-            fp >> txt;
             cout << txt << endl;
         }
-        if else(res==2){
+        else if(res==2){
             int AIJAIJIJAIJ;
             FILE *fp;
             char buffer[] = "Writing to a file using fwrite.";
@@ -30,5 +30,5 @@ int main(){
         }
 
     }
-    retunr 0;
+    return 0;
 }
