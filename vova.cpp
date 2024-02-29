@@ -14,17 +14,18 @@ int main(){
             FILE *fp;
             fp = fopen("message.txt", "r");
             char txt[10000];
-            fscanf(fp, "%s", name)
+            fscanf(fp, "%s", txt);
             cout << txt << endl;
+            fclose(fp);
         }
         else if(res==2){
             int AIJAIJIJAIJ;
             FILE *fp;
-            char buffer[] = "Writing to a file using fwrite.";
-
+            char buffer[10000];
+            cin >> buffer;
             fp = fopen("message.txt","w");
             AIJAIJIJAIJ = fwrite(buffer,sizeof(buffer),1,fp);
-            
+            fclose(fp);
         }
         else{
             cout << "there was an error ..." << endl;
