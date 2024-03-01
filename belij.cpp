@@ -7,7 +7,7 @@ using namespace std;
 
 int main(){
     while(true){
-        char name[1000] = "Vova";
+        char name[1000] = "Belij";
         int res;
         cout << "Press 1 if you want to check ur inbox ..." << '\n' << "Press 2 if you want to to send email in global chat ..." << endl;
         cin >> res;
@@ -24,7 +24,7 @@ int main(){
                     break;
                 }
             }
-            if(checker==name[1]){
+            if(checker==name[0]){
                 cout << "Context: " << txt << endl;
             }
             else{
