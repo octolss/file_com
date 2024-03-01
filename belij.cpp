@@ -9,7 +9,7 @@ int main(){
     while(true){
         char name[1000] = "Belij";
         int res;
-        cout << "Press 1 if you want to check ur inbox ..." << '\n' << "Press 2 if you want to to send email in global chat ..." << endl;
+        cout << "Press 1 if you want to check ur inbox ..." << '\n' << "Press 2 if you want to to send email to a direct user ..." << endl;
         cin >> res;
         if(res == 1){
             FILE *fp;
